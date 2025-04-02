@@ -1,27 +1,27 @@
 import { useCallback, useState } from 'react'
 
 export function useIsDrawing({
-  updateCell,
+  fillCell,
 }: {
-  updateCell: (x: number, y: number) => void
+  fillCell: (x: number, y: number) => void
 }) {
   const [isDrawing, setIsDrawing] = useState(false)
 
   const startDraw = useCallback(
     (x: number, y: number) => {
       setIsDrawing(true)
-      updateCell(x, y)
+      fillCell(x, y)
     },
-    [setIsDrawing, updateCell]
+    [fillCell, setIsDrawing]
   )
 
   const draw = useCallback(
     (x: number, y: number) => {
       if (isDrawing) {
-        updateCell(x, y)
+        fillCell(x, y)
       }
     },
-    [isDrawing, updateCell]
+    [fillCell, isDrawing]
   )
 
   const stopDraw = useCallback(() => {

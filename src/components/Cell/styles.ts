@@ -1,23 +1,10 @@
 import { memoizeWith } from 'ramda'
 
-import './App.css'
 import {
   DEFAULT_SQUARE_SIZE,
   SQUARE_BACKGROUND_COLOR,
   SQUARE_BORDER,
-} from '../const'
-
-export const getRowStyle = memoizeWith(
-  (y) => `${y}`,
-  (y: number) => ({
-    display: 'flex',
-    ...(y
-      ? undefined
-      : {
-          borderTop: SQUARE_BORDER,
-        }),
-  })
-)
+} from '../../const'
 
 export const getCellStyle = memoizeWith(
   (x) => `${x}`,

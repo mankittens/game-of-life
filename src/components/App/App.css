@@ -1,0 +1,39 @@
+#root {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.app-header {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 1rem;
+}
+
+.app-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.button-bar {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.fps-counter {
+  font-family: monospace;
+  font-size: 14px;
+  color: white;
+  background: #1a1a1a;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
