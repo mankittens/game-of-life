@@ -1,5 +1,5 @@
 export const DEFAULT_GRID_SIZE = 100
-export const DEFAULT_STEP_INTERVAL = 75
+export const DEFAULT_STEP_INTERVAL = 100
 export const DEFAULT_SQUARE_SIZE = 10
 
 export const MOUSE_LEFT_CLICK = 0
